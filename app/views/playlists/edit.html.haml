@@ -1,0 +1,17 @@
+.container
+  .col-xs-12.col-sm-12.col-md-12
+  %h1.playlist-title{style: "color :orange;"} Edit The Playlist
+  .row
+    .col-lg-offset-3.col-md-offset-3.col-sm-offset-3{style: "width: 50%; margin:auto;" }
+      .twt-wrapper
+        .panel.panel-info
+          .panel-heading
+            = form_tag(edit_playlist_path(@playlist.id), method: :get, remote: true) do
+              .input-group
+                %input.form-control{type: "text", name: "term", placeholder: "Aritist's name", id: "inc_search"}
+                  %span.input-group-btn
+                    %button.btn.btn-default{:type => "submit", id: "song_search_button"} Search
+          .panel-body.center-block.none-display
+            .clearfix.none-display
+            %ul.media-list{id: "result_songs"}
+              = render partial: "results"

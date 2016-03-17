@@ -1,0 +1,38 @@
+// Place all the styles related to the playlists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.playlist_img{
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+.playlist_box{
+  // height: 350px;
+  padding: 30px 0 0 0;
+  background-color: white;
+  opacity: 0.8;
+  // border-bottom: solid 5px #444;
+  margin: 0 0 30px 0;
+}
+.playlist_name{
+  color: #333;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  height: 50px;
+  text-align: center;
+}
+  .playlist_description{
+  color: #333;
+  margin: 0 auto;
+  width: 85%;
+  }
+
+  .edit-button{
+  display:none;
+  }
+
+  .playlist-title{
+  text-align: center;
+  }

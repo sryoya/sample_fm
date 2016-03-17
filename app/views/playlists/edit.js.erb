@@ -1,0 +1,7 @@
+$("#result_songs").html("<%= j(render partial: 'results') %>")
+if($(".result_song").length ==0){
+  $("#result_songs").html("<%= j(render partial: 'no_results') %>")
+}
+
+$(".panel-body.center-block.none-display").removeClass("none-display")
+$(".col-lg-4.col-md-4.col-sm-4.none-display").removeClass("none-display")

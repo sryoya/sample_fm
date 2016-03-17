@@ -1,0 +1,12 @@
+.container
+  - @playlists.each do |playlist|
+    .col-xs-12.col-sm-6.col-md-4
+      .playlist_box
+        %a{href: "/playlists/#{playlist.id}"}
+          %img.playlist_img{src: "http://is2.mzstatic.com/image/thumb/Music/v4/f7/97/69/f79769b0-dd4b-327b-9159-c6f9ceb7d196/source/100x100bb.jpg"}
+          %h3.playlist_name
+            = playlist.title
+        %p.playlist_description
+          = playlist.memo
+        %a{href: "/playlists/#{playlist.id}/edit"}
+          %button.btn.btn-blue{style: "margin-left: 10px;"} Edit

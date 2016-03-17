@@ -1,0 +1,25 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  background: image-url("lights-party-dancing-music.jpg") no-repeat center center fixed;
+ background-size:cover;
+ font-family: Verdana;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.no-results-color{
+  color: red;
+}
+
+.none-display{
+  display:none;
+}
+
+.sidebar-left{
+  margin-right: 50px;
+}

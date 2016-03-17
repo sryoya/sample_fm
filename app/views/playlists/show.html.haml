@@ -1,0 +1,17 @@
+%li.media.center-block
+  / .image-circle{style:"background-image: url(<%= result[:trackViewUrl] %>); height;10px; width: 10px; "}
+  %img.img-circle.center-block{alt: "", src: "#", }
+  /アートワーク
+  .media-body.text-center
+    %span.text-muted.pull-right
+    %p
+      %strong
+        = link_to "#",root_path, class: "text-success"
+        / アーティスト名
+      %p
+        = link_to "#", "#"
+        /トラック名、試聴uRL
+      %p
+        %audio{src: "#", controls: true, autoplay: false, id: "", class: "result_song"}
+        / 試聴url
+  %hr

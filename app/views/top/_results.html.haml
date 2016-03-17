@@ -1,0 +1,23 @@
+- @results.each_with_index do |result, i|
+  .col-xs-12.col-sm-6.col-md-4
+    .playlist_box
+      %img.center-block{alt: "", src: "#{result["artworkUrl100"]}", }
+      %h3.playlist_name
+        = link_to "#{result["artistName"]}",root_path, class: "text-success"
+      %h3.playlist_name
+        = link_to "#{result["trackName"]}", "#{result["previewUrl"]}"
+      %audio{src: "#{result["previewUrl"]}", controls: true, autoplay: false, id: "song_num#{i}", class: "result_song", style: "width:283px;"}
+/ - @results.each_with_index do |result, i|
+/   %li.media.center-block
+/     / .image-circle{style:"background-image: url(<%= result[:trackViewUrl] %>); height;10px; width: 10px; "}
+/     %img.img-circle.center-block{alt: "", src: "#{result["artworkUrl100"]}", }
+/     .media-body.text-center
+/       %span.text-muted.pull-right
+/       %p
+/         %strong
+/           = link_to "#{result["artistName"]}",root_path, class: "text-success"
+/         %p
+/           = link_to "#{result["trackName"]}", "#{result["previewUrl"]}"
+/         %p
+/           %audio{src: "#{result["previewUrl"]}", controls: true, autoplay: false, id: "song_num#{i}", class: "result_song"}
+/     %hr

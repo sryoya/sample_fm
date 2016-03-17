@@ -1,0 +1,15 @@
+.container
+  .row
+    .col-lg-offset-3.col-md-offset-3.col-sm-offset-3{style: "width: 50%; margin:auto;" }
+      .twt-wrapper
+        .panel.panel-info
+          .panel-heading
+            = form_tag(root_path, method: :get, remote: true) do
+              .input-group
+                %input.form-control{type: "text", name: "term", placeholder: "Aritist's name", id: "inc_search"}
+                  %span.input-group-btn
+                    %button.btn.btn-default{:type => "submit", id: "song_search_button"} Search
+  %ul.media-list{id: "result_songs"}
+    = render partial: "results"
+
+
