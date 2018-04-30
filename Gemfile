@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', github: 'rails/rails', branch: '4-2-stable'''''''
 # Use mysql as the database for Active Record
 gem 'mysql2', '0.3.18'
 # Use SCSS for stylesheets
@@ -50,7 +50,7 @@ gem 'erb2haml'
 
 gem 'devise'
 
-gem 'therubyracer', '0.10.2'
+gem 'therubyracer', '0.12.3'
 
 gem 'less-rails'
 
@@ -66,3 +66,6 @@ gem 'sprockets-rails', '2.3.3'
 
 gem 'itunes-search-api'
 
+gem 'json', github: 'flori/json', branch: 'v1.8'
+
+gem 'rename'
