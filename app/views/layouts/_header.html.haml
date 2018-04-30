@@ -13,17 +13,18 @@
             %span.glyphicon.glyphicon-headphones
         -# Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          %ul.nav.navbar-nav.col-md-4
-            %li
-              %a.btn{"data-toggle" => "modal", "data-target" => "#modal-example", :role => "button", class: ".modal_form_btn"}　Create Playlist
-            %li.dropdown
-          %form.navbar-form.navbar-right.col-md-4{:role => "search"}
-            .form-group
-              %input.form-control{:placeholder => "Search Playlists", :type => "text"}/
-            %a{href: "/playlists"}
-              %button.btn.btn-default{:type => "submit"} Search
-            }
-          .col-md-4.center-block.navbar-center
+          / %ul.nav.navbar-nav.col-md-4
+          /   %li
+          /     %a.btn{"data-toggle" => "modal", "data-target" => "#modal-example", :role => "button", class: ".modal_form_btn"}　Create Playlist
+          /   %li.dropdown
+          / %form.navbar-form.navbar-right.col-md-4{:role => "search"}
+          /   .form-group
+          /     %input.form-control{:placeholder => "Search Playlists", :type => "text"}/
+          /   %a{href: "/playlists"}
+          /     %button.btn.btn-default{:type => "submit"} Search
+          /   }
+          / %.col-md-4.center-block.navbar-center
+          %center.center-block.navbar-center
             / = image_tag "cooltext162979135583535.png", alt: "Sample.fm -make your playlists by iTunes previews", height: "50px", width: "200px"
             %a{href: "/"}
               %center
