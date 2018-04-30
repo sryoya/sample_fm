@@ -1,5 +1,6 @@
 .navbar-skelton {
-  background-color: rgba(0,0,0,0.5);
+  background-color: #99CCFF;
+  opacoty: 0.8;
   border-color: transparent !important;
   li{
     a{
@@ -13,5 +14,10 @@
 
 .navbar-skelton-font-color {
  color: #acacff !important;
+}
+
+.header-title{
+  font-size:30px;
+  color: white;
 }
 

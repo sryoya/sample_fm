@@ -1,14 +1,14 @@
 .container
   .row
-    .col-lg-offset-3.col-md-offset-3.col-sm-offset-3{style: "width: 50%; margin:auto;" }
+    .col-lg-offset-3.col-md-offset-3.col-sm-offset-3{style: "width: 80%; margin:auto;" }
       .twt-wrapper
-        .panel.panel-info
-          .panel-heading
+        .panel.panel-info.no-border.search-panel-info
+          .panel-heading.search-panel-heading.no-border
             = form_tag(root_path, method: :get, remote: true) do
-              .input-group
-                %input.form-control{type: "text", name: "term", placeholder: "Aritist's name", id: "inc_search"}
-                  %span.input-group-btn
-                    %button.btn.btn-default{:type => "submit", id: "song_search_button"} Search
+              .input-group.search-input-group
+                %input.form-control.search-form-control{type: "text", name: "term", placeholder: "アーティスト名、曲名", id: "inc_search"}
+              %span.input-group-btn.search-form-btn
+                %button.btn.btn-default.search-btn{:type => "submit", id: "song_search_button"} 検索
   %ul.media-list{id: "result_songs"}
     = render partial: "results"
 

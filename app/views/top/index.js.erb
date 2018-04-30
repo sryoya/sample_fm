@@ -1,3 +1,4 @@
+//次の曲を再生
 $("#result_songs").html("<%= j(render partial: 'results') %>")
 if($(".result_song").length ==0){
   $("#result_songs").html("<%= j(render partial: 'no_results') %>")
@@ -6,6 +7,7 @@ if($(".result_song").length ==0){
 $(".panel-body.center-block.none-display").removeClass("none-display")
 $(".col-lg-4.col-md-4.col-sm-4.none-display").removeClass("none-display")
 
+//次の曲を自動再生
 function playNextSong(next_scheduled_song_id){
   var next_playing_id = next_scheduled_song_id - 0 + 1;
   var next_audio = $('#song_num' + next_playing_id);
@@ -17,6 +19,7 @@ function playNextSong(next_scheduled_song_id){
   $(this).parents("li.media.center-block").remove();
 };
 
+//曲の再生⇛そのまま自動再生
 $("audio").on('ended', function(){
   var next_playing_id = $(this).attr('id').match(/[0-9]+\.?[0-9]*/g)[0] - 0 + 1;
   var next_audio = $('#song_num' + next_playing_id);
@@ -28,6 +31,7 @@ $("audio").on('ended', function(){
   $(this).parents("li.media.center-block").remove()
 });
 
+//曲の停止
 $("audio").on('play', function(){
   var other_audio = $("audio").not(this);
   $.each(other_audio, function(i, audio){

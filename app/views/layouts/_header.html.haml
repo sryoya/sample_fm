@@ -17,22 +17,6 @@
             %li
               %a.btn{"data-toggle" => "modal", "data-target" => "#modal-example", :role => "button", class: ".modal_form_btn"}　Create Playlist
             %li.dropdown
-              / %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              /   Dropdown
-              /   %span.caret
-              / %ul.dropdown-menu
-              /   %li
-              /     %a{:href => "#"} Action
-              /   %li
-              /     %a{:href => "#"} Another action
-              /   %li
-              /     %a{:href => "#"} Something else here
-              /   %li.divider{:role => "separator"}
-              /   %li
-              /     %a{:href => "#"} Separated link
-              /   %li.divider{:role => "separator"}
-              /   %li
-              /     %a{:href => "#"} One more separated link
           %form.navbar-form.navbar-right.col-md-4{:role => "search"}
             .form-group
               %input.form-control{:placeholder => "Search Playlists", :type => "text"}/
@@ -42,7 +26,8 @@
           .col-md-4.center-block.navbar-center
             / = image_tag "cooltext162979135583535.png", alt: "Sample.fm -make your playlists by iTunes previews", height: "50px", width: "200px"
             %a{href: "/"}
-              = image_tag "cooltext163050969447566.png", alt: "Sample.fm -make your playlists by iTunes previews", height: "50px", width: "200px"
+              %center
+                = image_tag "cooltext284578033948975.png", alt: "試聴くん", height: "50px", width: "200px"
   #modal-example.modal{:tabindex => "-1"}
     .modal-dialog
       / 3.モーダルのコンテンツ
