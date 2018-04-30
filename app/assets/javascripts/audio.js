@@ -38,7 +38,6 @@ $(function(){
 $(function(){
   $("audio").on('play', function(){
     var now = $(this).attr("id");
-    alert(now)
   });
   // $("#song_num").bind("ended", function(){
 
