@@ -6,10 +6,21 @@
           .panel-heading.search-panel-heading.no-border
             = form_tag(root_path, method: :get, remote: true) do
               .input-group.search-input-group
-                %input.form-control.search-form-control{type: "text", name: "term", placeholder: "アーティスト名、曲名", id: "inc_search"}
+                %input.form-control.search-form-control{type: "text", name: "term", placeholder: "アーティスト名か曲名を入力してください", id: "inc_search"}
               %span.input-group-btn.search-form-btn
                 %button.btn.btn-default.search-btn{:type => "submit", id: "song_search_button"} 検索
   %ul.media-list{id: "result_songs"}
     = render partial: "results"
+  / はてぶボタン
+  %center
+    %a.hatena-bookmark-button{"data-hatena-bookmark-lang" => "ja", "data-hatena-bookmark-layout" => "basic-label-counter", :href => "http://b.hatena.ne.jp/entry/", :title => "このエントリーをはてなブックマークに追加"}
+      %img{:alt => "このエントリーをはてなブックマークに追加", :height => "20", :src => "https://b.st-hatena.com/images/entry-button/button-only@2x.png", :style => "border: none;", :width => "20"}/
+    %script{:async => "async", :charset => "utf-8", :src => "https://b.st-hatena.com/js/bookmark_button.js", :type => "text/javascript"}
+    .fb-like{"data-layout" => "box_count"}
+    %a.twitter-share-button{"data-show-count" => "false", :href => "https://twitter.com/share?ref_src=twsrc%5Etfw"} Tweet
+    %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}
+
+
+
 
 
