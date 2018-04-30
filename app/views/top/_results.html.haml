@@ -3,7 +3,11 @@
     .playlist_box
       %img.center-block{alt: "", src: "#{result["artworkUrl100"]}", }
       %h3.playlist_name
-        = link_to "#{result["artistName"]}",root_path, class: "text-success"
+        = link_to "#{result["artistName"]}",root_path(term: "#{result["artistName"]}"), remote: true, class: "text-success"
       %h3.playlist_name
-        = link_to "#{result["trackName"]}", "#{result["previewUrl"]}"
-      %audio{src: "#{result["previewUrl"]}", controls: true, autoplay: false, id: "song_num#{i}", class: "result_song", style: "width:283px;"}
+        = link_to "#{result["trackName"]}",root_path(term: "#{result["trackName"]}"), remote: true
+      .clearfix
+        %audio.playlist-audio{src: "#{result["previewUrl"]}", controls: true, autoplay: false, id: "song_num#{i}", class: "result_song"}
+        .itunes-link
+          %a{href: "#{result["viewURL"]}"}
+            %img.itunes-icon{src: "assets/itunes-icon.jpg", alt: "itunesで試聴"}
