@@ -9,5 +9,5 @@
       .clearfix
         %audio.playlist-audio{src: "#{result["previewUrl"]}", controls: true, autoplay: false, id: "song_num#{i}", class: "result_song"}
         .itunes-link
-          %a{href: "#{result["viewURL"]}"}
+          %a{href: "#{result["trackViewUrl"]}", target: "_blank"}
             %img.itunes-icon{src: "assets/itunes-icon.jpg", alt: "itunesで試聴"}

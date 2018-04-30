@@ -5,7 +5,7 @@ class TopController < ApplicationController
   		create_search_log(search_term, request.remote_ip)
   	end 
     @results = ITunesSearchAPI.search(term: search_term, country: "JP", media: "music")
-    @search_keyword = search_term if @results.blank?
+    @search_keyword = search_term
   end
 
   private 

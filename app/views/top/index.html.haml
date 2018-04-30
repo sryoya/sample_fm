@@ -11,7 +11,7 @@
                 %button.btn.btn-default.search-btn{:type => "submit", id: "song_search_button"} 検索
   %ul.media-list{id: "result_songs"}
     = render partial: "results"
-  / はてぶボタン
+  / はてぶボタン・FBボタン・Twitterボタン
   %center
     %a.hatena-bookmark-button{"data-hatena-bookmark-lang" => "ja", "data-hatena-bookmark-layout" => "basic-label-counter", :href => "http://b.hatena.ne.jp/entry/", :title => "このエントリーをはてなブックマークに追加"}
       %img{:alt => "このエントリーをはてなブックマークに追加", :height => "20", :src => "https://b.st-hatena.com/images/entry-button/button-only@2x.png", :style => "border: none;", :width => "20"}/
