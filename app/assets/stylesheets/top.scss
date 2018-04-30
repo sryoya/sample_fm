@@ -3,13 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background: image-url("lights-party-dancing-music.jpg") no-repeat center center fixed;
+ //background: image-url("lights-party-dancing-music.jpg") no-repeat center center fixed;
+ background-color: #f6f6f6;
  background-size:cover;
  font-family: Verdana;
 }
 
 .container{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .no-results-color{
@@ -21,5 +22,37 @@ body{
 }
 
 .sidebar-left{
-  margin-right: 50px;
+ 	margin-right: 50px;
+}
+
+.no-border {
+ border: none; 
+}
+
+// 以下bootstrapのoverride
+.search-panel-heading{
+	background-color: #f6f6f6 !important;
+	border-color: #f6f6f6 !important;
+}
+
+.search-btn{
+	background-color: #99CCFF;
+	color: white;
+	margin: auto;
+	width:60%;
+	font-size: 20px;
+}
+
+.search-input-group{
+	margin:auto;
+	width:60%;
+}
+
+.search-form-control{
+	height:50px;
+}
+
+.search-form-btn{
+	padding-top:  10px;
+	text-align: center;
 }
