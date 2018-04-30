@@ -69,3 +69,5 @@ gem 'itunes-search-api'
 gem 'json', github: 'flori/json', branch: 'v1.8'
 
 gem 'rename'
+
+gem 'nokogiri', '~> 1.8.2'
