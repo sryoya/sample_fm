@@ -3,9 +3,9 @@
     .playlist_box
       %img.center-block{alt: "", src: "#{result["artworkUrl100"]}", }
       %h3.playlist_name
-        = link_to "#{result["artistName"]}",root_path(term: "#{result["artistName"]}", submit_type: "link"), class: "text-success"
+        = link_to "#{result["artistName"]}",results_path(term: "#{result["artistName"]}", submit_type: "link"), class: "text-success"
       %h3.playlist_name
-        = link_to "#{result["trackName"]}",root_path(term: "#{result["trackName"]}", submit_type: "link")
+        = link_to "#{result["trackName"]}",results_path(term: "#{result["trackName"]}", submit_type: "link")
       .clearfix
         %audio.playlist-audio{src: "#{result["previewUrl"]}", controls: true, autoplay: false, id: "song_num#{i}", class: "result_song"}
         .itunes-link
