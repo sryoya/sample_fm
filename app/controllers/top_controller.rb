@@ -8,7 +8,7 @@ class TopController < ApplicationController
 
   private 
   def create_search_log(search_word, user_ip)
-  	#検索ログを表示
+  	#検索ログを保存
 	search_log = SearchLog.new()
 	search_log.search_word = search_word
 	search_log.user_ip = user_ip
