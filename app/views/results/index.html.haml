@@ -1,0 +1,5 @@
+%ul.media-list{id: "result_songs"}
+  -if !@results.empty?
+    = render partial: "results"
+  -else
+    = render "no_results"

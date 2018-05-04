@@ -1,0 +1,11 @@
+.row
+  .col-lg-offset-3.col-md-offset-3.col-sm-offset-3{style: "width: 80%; margin:auto;" }
+    .twt-wrapper
+      .panel.panel-info.no-border.search-panel-info
+        .panel-heading.search-panel-heading.no-border
+          = form_tag(results_path, method: :get) do
+            .input-group.search-input-group
+              %input.form-control.search-form-control{type: "text", name: "term", placeholder: "アーティスト名か曲名を入力してください", value: "#{@search_keyword}", id: "inc_search"}
+            %input{:name => "submit_type", :type => "hidden", :value => "search"}/
+            %span.input-group-btn.search-form-btn
+              %button.btn.btn-default.search-btn{:type => "submit", id: "song_search_button"} 検索

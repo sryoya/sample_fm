@@ -14,8 +14,10 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
   %body
     = render 'layouts/header'
-    = yield
-    = render 'layouts/footer'
+    .container
+      = render 'layouts/search_window'
+      = yield
+      = render 'layouts/footer'
   / fbいいね用
   #fb-root
   :javascript
@@ -26,5 +28,3 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-
-

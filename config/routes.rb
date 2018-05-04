@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'top#index'
-  get 'results', to: 'top#index'
+  resources :results, only: [:index]
   resources :playlists, only: [:index, :show, :create, :edit, :update] do
     resources :tracks, only: [:edit, :create]
   end
