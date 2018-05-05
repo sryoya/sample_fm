@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: sample_fm_development
+  database: sicho_kun_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sample_fm_test
+  database: sicho_kun_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: sample_fm_production
-  username: sample_fm
-  password: <%= ENV['SAMPLE_FM_DATABASE_PASSWORD'] %>
+  database: sicho_kun_production
+  username: sicho_kun
+  password: <%= ENV['sicho_kun_DATABASE_PASSWORD'] %>
