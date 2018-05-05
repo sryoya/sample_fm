@@ -24,28 +24,5 @@ Things you may want to cover:
 * ...
 
 
-・playlistsテーブル
-has_many tracks
-_id
-titile string
-comment text
-(user_id)
-
-・tracksテーブル
-belongs_to playlist
-id
-playlist_id integer アソシエーション
-preview_url text 試聴用のURL
-artwork_url text アートワーク用のURL
-itunes_artist_id integer itunesのアーティストID
-itunes_track_id integer　itunesのトラックID
-itunes_collcetion_id integer itunesのアルバムID
-collection_view_url text itunesのアルバムのリンク
-track_view_url text itunesの曲のリンク
-artist_name　stringアーティスト名
-collection_name stringアルバム名
-track_name　string 曲名
-
-
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
