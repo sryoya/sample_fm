@@ -1,7 +1,7 @@
 class ResultsController < ApplicationController
   def index
     search_term = params[:term]
-    create_search_log(search_term, request.remote_ip) if params[:submit_type] == "search" && !search_term.blank?
+    create_search_log(search_term, request.remote_ip) if params[:type] == "search" && !search_term.blank?
     @results = ITunesSearchAPI.search(term: search_term, country: "JP", media: "music")
     @search_keyword = search_term
   end
