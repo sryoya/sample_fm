@@ -17,10 +17,9 @@ class ResultsController < ApplicationController
       search_type = SEARCH_TYPE_LINK
     end
     SearchLog.create(search_word: search_word, search_type: search_type, user_ip: user_ip)
-    # search_log = SearchLog.new()
-    # search_log.search_word = search_word
-    # search_log.search_type = search_type
-    # search_log.user_ip = user_ip
-    # search_log.save
+    # 絵文字等が入力されたときのエラー回避
+    rescue ActiveRecord::StatementInvalid => e
+      search_word = "--error--"
+      create_search_log(search_word,search_type,user_ip)
   end
 end
