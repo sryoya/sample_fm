@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180430135447) do
+ActiveRecord::Schema.define(version: 20180505055201) do
 
   create_table "playlists", force: :cascade do |t|
     t.string   "title",      limit: 255
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20180430135447) do
     t.string   "user_ip",     limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+    t.string   "search_type", limit: 1
   end
 
   create_table "tracks", force: :cascade do |t|
