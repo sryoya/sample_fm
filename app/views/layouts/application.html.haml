@@ -5,12 +5,12 @@
     = favicon_link_tag('favicon.ico')
     %title 試聴くん
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = javascript_include_tag "jquery"
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    %script{:src => "./jquery.min.js"}
-    %script{:src => "./bootstrap-modal.js"}
-    %script{:src => "./bootstrap-transition.js"}
+    -# %script{:src => "./jquery.min.js"}
+    -# %script{:src => "./bootstrap-modal.js"}
+    -# %script{:src => "./bootstrap-transition.js"}
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
   %body
     = render 'layouts/header'
@@ -19,12 +19,3 @@
       = yield
     = render 'layouts/footer'
   / fbいいね用
-  #fb-root
-  :javascript
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
