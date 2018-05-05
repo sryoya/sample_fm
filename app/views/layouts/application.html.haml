@@ -1,16 +1,16 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     = favicon_link_tag('favicon.ico')
-    %title 試聴くん
+    %meta{content: "3,500万曲以上の音楽データベースから好きなアーティスト・曲を検索して試聴することができます。気になる曲をさくっと試聴したいとき、アーティストとタイトルを忘れたけどメロディを聞けば思い出せる曲探すとき、などにおすすめです。",
+    name: "description"}/
+    %meta{content: "音楽,試聴,音楽検索,Itunes,曲名から検索,アーティスト名から検索,曲名を思い出す", name: "keywords"}/
+    %title 30秒だけ聞ける音楽試聴サイト【試聴くん】
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag "jquery"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    -# %script{:src => "./jquery.min.js"}
-    -# %script{:src => "./bootstrap-modal.js"}
-    -# %script{:src => "./bootstrap-transition.js"}
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
   %body
     = render 'layouts/header'
@@ -18,4 +18,3 @@
       = render 'layouts/search_window'
       = yield
     = render 'layouts/footer'
-  / fbいいね用
