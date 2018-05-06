@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: sicho_kun_production
   username: sicho_kun
   password: <%= ENV['sicho_kun_DATABASE_PASSWORD'] %>
