@@ -7,5 +7,6 @@
             .input-group.search-input-group
               %input.form-control.search-form-control{type: "text", name: "term", placeholder: "アーティスト名か曲名を入力してください", value: "#{@search_keyword}", id: "inc_search"}
             %input{:name => "type", :type => "hidden", :value => "search"}/
-            %span.input-group-btn.search-form-btn
-              %button.btn.btn-default.search-btn{:type => "submit", id: "song_search_button"} 検索
+            %center
+              %span.input-group-btn.search-form-btn
+                %button.btn.btn-default.search-btn{:type => "submit", id: "song_search_button"} 検索
