@@ -72,4 +72,4 @@ gem 'rename'
 
 gem 'nokogiri', '~> 1.8.2'
 
-gem 'pg', group: :production
+gem 'pg', '~> 0.15', group: :production
