@@ -48,17 +48,16 @@
   }
 
   .playlist-audio{
-  	//width:283px;
     width:85%;
   	float:left;
   }
 
   .itunes-icon{
-  	height: 30px;
+    max-width: 100%;
+    bottom: 0;
   }
 
   .itunes-link{
   	float: left;
     width: 15%;
-  	// width: 30px;
   }
