@@ -73,3 +73,5 @@ gem 'rename'
 gem 'nokogiri', '~> 1.8.2'
 
 gem 'pg', '~> 0.15', group: :production
+
+gem 'google-analytics-rails'

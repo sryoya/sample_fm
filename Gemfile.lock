@@ -95,6 +95,7 @@ GEM
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    google-analytics-rails (1.1.1)
     grease (0.3.1)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -253,6 +254,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   erb2haml
+  google-analytics-rails
   haml-rails
   itunes-search-api
   jbuilder (~> 2.0)
